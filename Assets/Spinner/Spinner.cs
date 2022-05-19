@@ -7,11 +7,8 @@ public class Spinner : MonoBehaviour
     public float genSpeed;
     public float subSpeed;
     public bool isSpinning = false;
-
-    void Start()
-    {
-        
-    }
+    public AudioSource source;
+    public AudioClip clip;
 
     // Update is called once per frame
     void Update()
@@ -39,6 +36,7 @@ public class Spinner : MonoBehaviour
     {
         genSpeed = Random.Range(2.000f, 5.000f);
         subSpeed = Random.Range(0.003f, 0.005f);
+        source.PlayOneShot(clip);
 
         isSpinning = true;
         Debug.Log(genSpeed);
