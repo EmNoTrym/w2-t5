@@ -440,6 +440,7 @@ MonoBehaviour:
   genSpeed: 0
   subSpeed: 0
   isSpinning: 0
+  roundNum: 6
   source: {fileID: 1401323006}
   clip: {fileID: 8300000, guid: 667390647aa874fe7a3dc7cd1fabdeef, type: 3}
 --- !u!1 &705507993
